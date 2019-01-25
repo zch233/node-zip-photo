@@ -1,0 +1,14 @@
+{
+  "name": "nodezip",
+  "version": "1.0.0",
+  "description": "这是一个压缩图片的no项目",
+  "main": "photo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tinify": "^1.6.0-beta.2"
+  }
+}
