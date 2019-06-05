@@ -33,15 +33,11 @@ function fileDisplay(filePath) {
             var isDir = stats.isDirectory(); //是文件夹
             if (isFile) {
               // 压缩图片
-              setTimeout(() => {
-                tinify.fromFile(filedir).toFile(filedir)
-                console.log(filedir, '压缩成功~');
-              });
+              tinify.fromFile(filedir).toFile(filedir)
+              console.log(filedir, '压缩成功~');
             }
             if (isDir) {
               fileDisplay(filedir); //递归，如果是文件夹，就继续遍历该文件夹下面的文件
-            } else {
-              process.exit();
             }
           }
         })
