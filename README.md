@@ -10,6 +10,6 @@ npm i
 
 使用
 ```
-node photo.js
+node app
 ```
 ##### 将所需压缩图片放入 `image` 目录中，`node` 会自动便利该目录下所有的文件
