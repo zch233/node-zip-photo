@@ -4,9 +4,9 @@ var path = require('path');
 //解析需要遍历的文件夹
 var filePath = path.resolve(__dirname + '/image');
 const tinify = require('tinify')
-tinify.key = "qsrGnbEFHdYNsAdWQqTo92AX5cnonluf";
+tinify.key = "WpYVeU3DkB5v6oQJRPAijtBhFdP5wn5D";
 console.log('正在运行中，请勿关闭！~')
-
+let index = 1
 //调用文件遍历方法
 fileDisplay(filePath);
 
@@ -34,7 +34,7 @@ function fileDisplay(filePath) {
             if (isFile) {
               // 压缩图片
               tinify.fromFile(filedir).toFile(filedir)
-              console.log(filedir, '压缩成功~');
+              console.log(index++, filedir, '压缩成功~');
             }
             if (isDir) {
               fileDisplay(filedir); //递归，如果是文件夹，就继续遍历该文件夹下面的文件
