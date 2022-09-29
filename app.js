@@ -4,7 +4,7 @@ var path = require('path');
 //解析需要遍历的文件夹
 var filePath = path.resolve(__dirname + '/image');
 const tinify = require('tinify')
-tinify.key = "WpYVeU3DkB5v6oQJRPAijtBhFdP5wn5D";
+tinify.key = "请输入你帐号下的key => https://tinify.com/dashboard/api";
 console.log('正在运行中，请勿关闭！~')
 let index = 1
 //调用文件遍历方法
